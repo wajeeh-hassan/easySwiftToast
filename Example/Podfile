@@ -1,0 +1,13 @@
+use_frameworks!
+
+platform :ios, '9.0'
+
+target 'easySwiftToast_Example' do
+  pod 'easySwiftToast', :path => '../'
+
+  target 'easySwiftToast_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
