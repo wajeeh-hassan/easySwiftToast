@@ -1,9 +1,8 @@
 //
 //  Toast.swift
-//  CricksLab
+//  easySwiftToast
 //
-//  Created by wajeeh on 3/16/20.
-//
+//  Created by wajeeh hassan on 24/11/2021.
 //
 
 import Foundation

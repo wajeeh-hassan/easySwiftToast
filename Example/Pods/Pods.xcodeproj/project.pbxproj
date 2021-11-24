@@ -11,9 +11,8 @@
 		21658D28606907459EF134DEE6D87C12 /* Pods-easySwiftToast_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BF862DB47CB92F501B52F70F91FED1E6 /* Pods-easySwiftToast_Example-dummy.m */; };
 		2CB510D8FED9DD7087680BF7142F0757 /* Pods-easySwiftToast_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A738B480B1B62C6DF166391CAA27ECC9 /* Pods-easySwiftToast_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		47D17B6C4097F20C8E11635F4ED0B88C /* Pods-easySwiftToast_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8016B9401D8FDFF91033C1B60EAF1630 /* Pods-easySwiftToast_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		69C76726274E88B000C86147 /* hasNotch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69C76723274E88B000C86147 /* hasNotch.swift */; };
-		69C76727274E88B000C86147 /* easyToast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69C76724274E88B000C86147 /* easyToast.swift */; };
-		69C76728274E88B000C86147 /* TopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69C76725274E88B000C86147 /* TopViewController.swift */; };
+		69C7672A274E8D9C00C86147 /* extentions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69C76729274E8D9C00C86147 /* extentions.swift */; };
+		69C76730274E8E9800C86147 /* Toast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69C7672F274E8E9800C86147 /* Toast.swift */; };
 		6D88524C90F1BDC0ADAEE32BE176B725 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
 		7271779ACD8FF36EE303DAC22D57C93E /* easySwiftToast-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 98F95762E5A8B641C2564A821B0DAE4C /* easySwiftToast-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9AA256B464166219DBC28226F402814C /* Pods-easySwiftToast_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 73FD70B0FC0B4191C7C09270F3CD1C43 /* Pods-easySwiftToast_Tests-dummy.m */; };
@@ -52,9 +51,8 @@
 		55B694CC83038FBB8288B0CB84722D53 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		5D14517F513B01936469C94E9F1FBA92 /* easySwiftToast-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "easySwiftToast-prefix.pch"; sourceTree = "<group>"; };
 		692EC7E774DA969436DF2B23BE64AFD6 /* Pods-easySwiftToast_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-easySwiftToast_Tests-Info.plist"; sourceTree = "<group>"; };
-		69C76723274E88B000C86147 /* hasNotch.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = hasNotch.swift; sourceTree = "<group>"; };
-		69C76724274E88B000C86147 /* easyToast.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = easyToast.swift; sourceTree = "<group>"; };
-		69C76725274E88B000C86147 /* TopViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopViewController.swift; sourceTree = "<group>"; };
+		69C76729274E8D9C00C86147 /* extentions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = extentions.swift; path = easySwiftToast/Classes/extentions.swift; sourceTree = "<group>"; };
+		69C7672F274E8E9800C86147 /* Toast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Toast.swift; path = easySwiftToast/Classes/Toast.swift; sourceTree = "<group>"; };
 		7123A71892970A570F30325DB9BBFF08 /* Pods-easySwiftToast_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-easySwiftToast_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		73FD70B0FC0B4191C7C09270F3CD1C43 /* Pods-easySwiftToast_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-easySwiftToast_Tests-dummy.m"; sourceTree = "<group>"; };
@@ -180,16 +178,6 @@
 			path = "Target Support Files/Pods-easySwiftToast_Example";
 			sourceTree = "<group>";
 		};
-		69C76722274E886800C86147 /* Classes */ = {
-			isa = PBXGroup;
-			children = (
-				69C76724274E88B000C86147 /* easyToast.swift */,
-				69C76723274E88B000C86147 /* hasNotch.swift */,
-				69C76725274E88B000C86147 /* TopViewController.swift */,
-			);
-			path = Classes;
-			sourceTree = "<group>";
-		};
 		6E8682C8E20AF329CD441DD0982823EC /* Products */ = {
 			isa = PBXGroup;
 			children = (
@@ -212,8 +200,9 @@
 		A688843B24972475D115D69D7E14CDD9 /* easySwiftToast */ = {
 			isa = PBXGroup;
 			children = (
-				69C76722274E886800C86147 /* Classes */,
 				0994182F5CAE0B3B3381393DB844095F /* ReplaceMe.swift */,
+				69C7672F274E8E9800C86147 /* Toast.swift */,
+				69C76729274E8D9C00C86147 /* extentions.swift */,
 				560874BC4D8E37F9203CF970BC6E4BBF /* Pod */,
 				46F546CD8A5058E5630921CD5E3D9C25 /* Support Files */,
 			);
@@ -385,10 +374,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				B1ABFBC9C7974DDC9BCA81E6858F0CDB /* easySwiftToast-dummy.m in Sources */,
-				69C76726274E88B000C86147 /* hasNotch.swift in Sources */,
+				69C76730274E8E9800C86147 /* Toast.swift in Sources */,
+				69C7672A274E8D9C00C86147 /* extentions.swift in Sources */,
 				DE3F202E63E41039D7BAAF6F56AB2F37 /* ReplaceMe.swift in Sources */,
-				69C76727274E88B000C86147 /* easyToast.swift in Sources */,
-				69C76728274E88B000C86147 /* TopViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -1,11 +1,20 @@
 //
-//  TopVc.swift
-//  my1
+//  estentions.swift
+//  easySwiftToast
 //
-//  Created by wajeeh hassan on 23/11/2021.
+//  Created by wajeeh hassan on 24/11/2021.
 //
 
 import Foundation
+
+
+extension UIDevice {
+    @available(iOS 11.0, *)
+    var hasNotch: Bool {
+        let bottom = UIApplication.shared.keyWindow?.safeAreaInsets.bottom ?? 0
+        return bottom > 0
+    }
+}
 
 extension UIApplication {
     class func topViewController(base: UIViewController? = UIApplication.shared.keyWindow?.rootViewController) -> UIViewController? {
