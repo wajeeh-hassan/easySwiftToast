@@ -1,0 +1,16 @@
+PODS:
+  - easySwiftToast (0.1.0)
+
+DEPENDENCIES:
+  - easySwiftToast (from `../`)
+
+EXTERNAL SOURCES:
+  easySwiftToast:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  easySwiftToast: 9ff68c9ca0ef62f1f615a9d43b108f110d93e072
+
+PODFILE CHECKSUM: 0172678db8463f7c2ee70535a1928adc87055456
+
+COCOAPODS: 1.11.2

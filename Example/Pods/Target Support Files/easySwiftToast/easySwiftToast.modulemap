@@ -1,0 +1,6 @@
+framework module easySwiftToast {
+  umbrella header "easySwiftToast-umbrella.h"
+
+  export *
+  module * { export * }
+}
