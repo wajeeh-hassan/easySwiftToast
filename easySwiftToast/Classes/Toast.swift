@@ -11,9 +11,9 @@ import UIKit
 public extension UIViewController{
 
     
-     func showEasyToast(message: String , backroundColor : UIColor = UIColor.black.withAlphaComponent(0.8), textColor : UIColor = UIColor.white,  delay : Double = 0.2){
+     func showEasyToast(message: String , backroundColor : UIColor = UIColor.black.withAlphaComponent(0.8), textColor : UIColor = UIColor.white,  duration : Double = 3){
         
-        DispatchQueue.main.asyncAfter(deadline: .now() + delay ) {
+         DispatchQueue.main.asyncAfter(deadline: .now() + 0.2 ) {
 
             if let controller = UIApplication.topViewController() {
                 
@@ -57,7 +57,7 @@ public extension UIViewController{
                 UIView.animate(withDuration: 0.5, delay: 0.0, options: .curveEaseIn, animations: {
                     toastContainer.alpha = 1.0
                 }, completion: { _ in
-                    UIView.animate(withDuration: 0.5, delay: 5, options: .curveEaseOut, animations: {
+                    UIView.animate(withDuration: 0.5, delay: duration, options: .curveEaseOut, animations: {
                         toastContainer.alpha = 0.0
                     }, completion: {_ in
                         toastContainer.removeFromSuperview()
@@ -74,9 +74,9 @@ public extension UIViewController{
     
     
     
-     func showEeasySnackBar(message: String , backroundColor : UIColor = UIColor.black.withAlphaComponent(0.8) , textColor : UIColor = UIColor.white,  delay : Double = 0.2){
+     func showEasySnackBar(message: String , backroundColor : UIColor = UIColor.black.withAlphaComponent(0.8) , textColor : UIColor = UIColor.white,  duration : Double = 3){
         
-        DispatchQueue.main.asyncAfter(deadline: .now() + delay ) {
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.2 ) {
             
             if let controller = UIApplication.topViewController() {
                 
@@ -132,7 +132,7 @@ public extension UIViewController{
                 UIView.animate(withDuration: 0.5, delay: 0.0, options: .curveEaseIn, animations: {
                     toastContainer.alpha = 1.0
                 }, completion: { _ in
-                    UIView.animate(withDuration: 0.5, delay: 5, options: .curveEaseOut, animations: {
+                    UIView.animate(withDuration: 0.5, delay: duration, options: .curveEaseOut, animations: {
                         toastContainer.alpha = 0.0
                     }, completion: {_ in
                         toastContainer.removeFromSuperview()

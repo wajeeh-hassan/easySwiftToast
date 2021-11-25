@@ -11,6 +11,8 @@ import easySwiftToast
 
 class ViewController: UIViewController {
 
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -22,5 +24,23 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    @IBAction func showToastAction(_ sender: Any) {
+      
+        let message = "This is example of easy toast"
+        showEasyToast(message: message)
+       // showEasyToast(message: message, backroundColor: UIColor.red, textColor: UIColor.yellow, duration: 2)
+
+    }
+    
+    @IBAction func showSnackbarAction(_ sender: Any) {
+        
+        let message = "This is example of easy snackbar"
+        showEasySnackBar(message: message)
+//        showEasySnackBar(message: message, backroundColor: UIColor.red, textColor: UIColor.yellow, duration: 3)
+        
+    }
+    
+    
+    
 }
 

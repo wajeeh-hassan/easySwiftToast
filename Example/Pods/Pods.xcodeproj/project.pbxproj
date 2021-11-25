@@ -18,7 +18,6 @@
 		9AA256B464166219DBC28226F402814C /* Pods-easySwiftToast_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 73FD70B0FC0B4191C7C09270F3CD1C43 /* Pods-easySwiftToast_Tests-dummy.m */; };
 		B1347E12BA14BCE520B9AAB2D45AC7E2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
 		B1ABFBC9C7974DDC9BCA81E6858F0CDB /* easySwiftToast-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = CC54DCE27C0248DC251AF90FC82647F2 /* easySwiftToast-dummy.m */; };
-		DE3F202E63E41039D7BAAF6F56AB2F37 /* ReplaceMe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0994182F5CAE0B3B3381393DB844095F /* ReplaceMe.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,7 +39,6 @@
 
 /* Begin PBXFileReference section */
 		095E362190A1F502B92A6F208A22E378 /* Pods-easySwiftToast_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-easySwiftToast_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		0994182F5CAE0B3B3381393DB844095F /* ReplaceMe.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ReplaceMe.swift; path = easySwiftToast/Classes/ReplaceMe.swift; sourceTree = "<group>"; };
 		0F149F22F86B673AAD0F4DBD1914A79D /* easySwiftToast.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = easySwiftToast.modulemap; sourceTree = "<group>"; };
 		136963134EC2605D8F2F22EDA5C6CCE5 /* easySwiftToast.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = easySwiftToast.release.xcconfig; sourceTree = "<group>"; };
 		2DF8F804994D4374246798E4B42F3005 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
@@ -200,7 +198,6 @@
 		A688843B24972475D115D69D7E14CDD9 /* easySwiftToast */ = {
 			isa = PBXGroup;
 			children = (
-				0994182F5CAE0B3B3381393DB844095F /* ReplaceMe.swift */,
 				69C7672F274E8E9800C86147 /* Toast.swift */,
 				69C76729274E8D9C00C86147 /* extentions.swift */,
 				560874BC4D8E37F9203CF970BC6E4BBF /* Pod */,
@@ -376,7 +373,6 @@
 				B1ABFBC9C7974DDC9BCA81E6858F0CDB /* easySwiftToast-dummy.m in Sources */,
 				69C76730274E8E9800C86147 /* Toast.swift in Sources */,
 				69C7672A274E8D9C00C86147 /* extentions.swift in Sources */,
-				DE3F202E63E41039D7BAAF6F56AB2F37 /* ReplaceMe.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
