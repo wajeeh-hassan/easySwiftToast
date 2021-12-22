@@ -1,5 +1,5 @@
 # easySwiftToast
-**easySwiftToast** is very simple solution to show a toast message by writing single one line of code. 
+A very simple solution to show a toast message by writing single one line of code. 
 
 ![](https://raw.githubusercontent.com/wajeeh-hassan/easySwiftToast/master/media/demo.gif)
 
