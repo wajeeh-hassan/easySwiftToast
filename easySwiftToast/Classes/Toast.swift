@@ -17,7 +17,6 @@ public extension UIViewController{
 
             if let controller = UIApplication.topViewController() {
                 
-                
                 if let viewWithTag = controller.view.viewWithTag(101) {
                     viewWithTag.removeFromSuperview()
                 }
@@ -53,7 +52,7 @@ public extension UIViewController{
                 let c2 = NSLayoutConstraint(item: toastContainer, attribute: .trailing, relatedBy: .equal, toItem: controller.view, attribute: .trailing, multiplier: 1, constant: -30)
                 let c3 = NSLayoutConstraint(item: toastContainer, attribute: .bottom, relatedBy: .equal, toItem: controller.view, attribute: .bottom, multiplier: 1, constant: -100)
                 controller.view.addConstraints([c1, c2, c3])
-                
+                                
                 UIView.animate(withDuration: 0.5, delay: 0.0, options: .curveEaseIn, animations: {
                     toastContainer.alpha = 1.0
                 }, completion: { _ in
